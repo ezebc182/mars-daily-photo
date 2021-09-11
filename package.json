@@ -1,0 +1,22 @@
+{
+  "name": "mars-daily-photo",
+  "version": "1.0.0",
+  "description": "Mars Curiosity Rover Pictures of the Day",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "dotenv": "^10.0.0",
+    "node-cron": "^3.0.0",
+    "nodemailer": "^6.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url":  "git+https://github.com/ezebc182/mars-daily-photo.git"
+  },
+  "author": "Ezequiel Bär Coch",
+  "license": "ISC"
+}
