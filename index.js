@@ -2,7 +2,10 @@ require('dotenv').config();
 const nodemailer = require('nodemailer');
 const axios = require('axios');
 const cron = require('node-cron');
+const express = require('express');
+const app = express();
 
+const PORT = process.env.PORT || 80;
 
 const BASE_URL = 'https://api.nasa.gov/mars-photos/api/v1/rovers';
 
@@ -83,5 +86,13 @@ cron.schedule('0 23 * * *', async () => {
     } catch (error) {
         console.error(error);
     }
-})
+});
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/statusPage.html');
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is listening on port: ${PORT}`);
+});
 
