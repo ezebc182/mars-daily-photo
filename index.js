@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 80;
 const BASE_URL = 'https://api.nasa.gov/mars-photos/api/v1/rovers';
 
 const CAMERA_TYPES = {
-    'FHAZ': 'Fron Hazard Avoidance Camera',
+    'FHAZ': 'Front Hazard Avoidance Camera',
     'RHAZ': 'Rear Hazard Avoidance Camera',
     'MAST': 'Mast Camera',
     'CHEMCAM': 'Chemistry and Camera Complex',
